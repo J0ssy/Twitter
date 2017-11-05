@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-image: url(../img/bg01.jpg);
+	box-shadow: inset 0 0 10px #000;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bgGradient {
+	min-height: 670px;
+	background: rgba(0,0,0,0);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.84) 84%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(84%, rgba(0,0,0,0.84)), color-stop(100%, rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.84) 84%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.84) 84%, rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.84) 84%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.84) 84%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+.navbar {
+	min-width: 100%;
+    min-height: 50px;
+	background-color: #fff;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+	margin-right: auto;
+	margin-left: auto;
+	position: fixed;
+}
+
+li {
+	color: #7E8E9A;	
+	list-style: none;
+	display: inline;
+	margin-right: 10px;
+	margin-left: 50px;
+	margin-top: 15px;
+	float: left;
+	transition: color .3s ease-out;
+}
+
+li:hover {
+	color: #4BB4F4;
+}
+
+.navbar-link {
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #7E8E9A;
+	transition: color .3s ease-out;	
+}
+
+.navbar-link:hover {
+	color: #4BB4F4;
+}
+
+.fa {
+	font-size: 35px;
+	margin-right: 5px;
+}
+
+.fa-twitter {
+	color: #4BB4F4;
+	margin-top: 15px;
+    margin-left: 18%;
+    font-size: 25px;
+}
+
+div {
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+#container {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-link {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: #4BB4F4;
+	transition: all .3s ease-out;	
+
+}
+
+.container-link:hover {
+	text-decoration: underline;
+}
+
+.fixedDiv {
+	min-width: 45%;
+    height: 200px;
+	margin-top: 100px;
+	margin-left: 50px;
+	padding: 25px;
+	color:#7E8E9A;
+	float: left;
+}
+
+.fixedDiv-title {
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+.fixedDiv-text {
+	line-height: 1.4;
+	margin-bottom: 15px;
+}
+
+.fixedDiv-line {
+	background-color: #AEAEA1;
+	min-width: 50%;
+	margin-bottom: 20px;
+	height: 1px;
+}
+
+.inputDiv {
+	min-width: 45%;
+    min-height: 200px;
+	margin-top: 100px;
+	margin-left: 20px;
+	padding: 25px;
+	float: left;
+}
