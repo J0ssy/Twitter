@@ -1,6 +1,16 @@
 var buttonTweet = document.getElementById('btn');
 	buttonTweet.addEventListener('click', function() {
-	
+		var d = new Date();
+	    var n = d.toLocaleTimeString();
+	    var time = document.getElementById("time").innerHTML = n;
+
+	/*//Fecha
+	buttonTweet.addEventListener('click', function() {
+	    var d = new Date();
+	    var n = d.toLocaleTimeString();
+	    document.getEle..., ,,mentById("time").innerHTML = n;
+	});*/	                              
+
 	//tenemos que tomar el texto ingresado en el textarea
 	var tweetsTextArea = document.getElementById('tweets');
 	var tweets = tweetsTextArea.value;
@@ -20,11 +30,10 @@ var buttonTweet = document.getElementById('btn');
 		buttonTweet.classList.add('addTweet');
 	});
 
-	//validar que textarea tenga un mensaje
+	/*//validar que textarea tenga un mensaje
 	if (tweets.length == 0 || tweets == null) {
-		alert('Debes ingresar un mensaje');
-		return false;
-	} 
+		document.getElementById('btn').disabled 
+	} */
 
 	//nodo de texto del textarea
 	var textNewTweet = document.createTextNode(tweets);
@@ -35,7 +44,13 @@ var buttonTweet = document.getElementById('btn');
 		newTweet.appendChild(contenedorElemento);
 
 		container.appendChild(newTweet);	
-
 	
+	var textarea = document.getElementById('tweets');
+		textarea.onkeydown = function(){
+
+  	var initialLimit = document.getElementById("counter");
+  		initialLimit.innerHTML = 140 - this.value.length;
+ 
+   };
 	
 })
