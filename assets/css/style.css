@@ -105,7 +105,9 @@ div {
 	margin-left: 50px;
 	padding: 25px;
 	color:#7E8E9A;
-	float: left;
+	vertical-align: top;
+	display: inline-block;
+
 }
 
 .fixedDiv-title {
@@ -116,10 +118,11 @@ div {
 .fixedDiv-text {
 	line-height: 1.4;
 	margin-bottom: 15px;
+	font-size: 15px;
 }
 
 .fixedDiv-line {
-	background-color: #AEAEA1;
+	background-color: #DCDCDC;
 	min-width: 50%;
 	margin-bottom: 20px;
 	height: 1px;
@@ -131,5 +134,41 @@ div {
 	margin-top: 100px;
 	margin-left: 20px;
 	padding: 25px;
-	float: left;
+	display: inline-block;
+}
+
+textarea {
+	width: 100%;
+	min-height: 30%;
+	outline: none;
+	resize: none;
+	font-size: 15px;
+	border-bottom: solid 2px #DCDCDC;
+	color: #7E8E9A;
+	padding-bottom: 40px;
+}
+
+#btn {
+	padding: 10px 30px;
+	background-color: #DCDCDC;
+	color: #7E8E9A;
+	text-transform: uppercase;
+	font-weight: bold;
+	transition: all .3s ease-out;	
+	margin-top: 25px;
+}
+
+.commentDiv {
+	margin-top: 3em;
+
+}
+
+p {
+	display: inline-block;
+
+}
+
+.textTweet {
+	background-color: #4BB4F4;
+	color: #fff;
 }
