@@ -6,6 +6,7 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+/*Imagen del fondo*/
 body {
 	background-image: url(../img/bg01.jpg);
 	box-shadow: inset 0 0 10px #000;
@@ -13,6 +14,7 @@ body {
 	background-size: cover;
 }
 
+/*Efecto gradiente de fondo*/
 .bgGradient {
 	min-height: 670px;
 	background: rgba(0,0,0,0);
@@ -25,6 +27,7 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
 }
 
+/*Menú fijo*/
 .navbar {
 	min-width: 100%;
     min-height: 50px;
@@ -35,6 +38,7 @@ body {
 	position: fixed;
 }
 
+/*Links del Menú*/
 li {
 	color: #7E8E9A;	
 	list-style: none;
@@ -67,6 +71,7 @@ li:hover {
 	margin-right: 5px;
 }
 
+/*Ícono Twitter*/
 .fa-twitter {
 	color: #4BB4F4;
 	margin-top: 15px;
@@ -74,11 +79,7 @@ li:hover {
     font-size: 25px;
 }
 
-div {
-	border-radius: 2px;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-}
-
+/*Contenedor de todos los divs*/
 #container {
 	margin-right: auto;
 	margin-left: auto;
@@ -97,8 +98,11 @@ div {
 	text-decoration: underline;
 }
 
+/*Div de la izquierda*/
 .fixedDiv {
 	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 	min-width: 45%;
     height: 200px;
 	margin-top: 100px;
@@ -107,7 +111,6 @@ div {
 	color:#7E8E9A;
 	vertical-align: top;
 	display: inline-block;
-
 }
 
 .fixedDiv-title {
@@ -128,8 +131,11 @@ div {
 	height: 1px;
 }
 
+/*Div de la derecha con el input*/
 .inputDiv {
 	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 	min-width: 45%;
     min-height: 200px;
 	margin-top: 100px;
@@ -144,27 +150,38 @@ textarea {
 	outline: none;
 	resize: none;
 	font-size: 15px;
-	border-bottom: solid 2px #DCDCDC;
+	border-bottom: solid 2px #4BB4F4;
 	color: #7E8E9A;
 	padding-bottom: 40px;
 }
 
+/*Botón*/
 #btn {
 	padding: 10px 30px;
-	background-color: #DCDCDC;
-	color: #7E8E9A;
+	background-color: #4BB4F4;
+	color: #fff;
 	text-transform: uppercase;
 	font-weight: bold;
 	transition: all .3s ease-out;	
 	margin-top: 25px;
 }
 
+/*Botón desactivado*/
+.disableBtn {
+	opacity: 0.5;
+}
+
+
+/*Div creado del tweet*/
 .commentDivTweet {
 	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 	margin-top: 1em;
     width: 92%;
     min-height: 20px;
     padding: 15px;
+    white-space:pre-wrap;
     margin-left: auto;
     margin-right: auto;
 
@@ -180,20 +197,32 @@ p {
 	color: #fff;
 }
 
+
 .tweetText {
 	font-size: 15px;
 	color: #7E8E9A;
 
 }
 
+/*Contador*/
 #counter {
 	font-weight: bold;
-	color: #4BB4F4;
 	float: right;
     margin-top: 28px;
 }
 
-.warning {
+/*Color base del contador*/
+.basecolor {
+	color: #4BB4F4;
+}
 
+/*1ra advertencia con color del contador*/
+.prewarning {
+	color: orange;
+}
+
+/*2da advertencia con color del contador*/
+.warning {
+	color: crimson;
 }
 

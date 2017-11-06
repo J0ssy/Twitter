@@ -30,10 +30,6 @@ var buttonTweet = document.getElementById('btn');
 		buttonTweet.classList.add('addTweet');
 	});
 
-	/*//validar que textarea tenga un mensaje
-	if (tweets.length == 0 || tweets == null) {
-		document.getElementById('btn').disabled 
-	} */
 
 	//nodo de texto del textarea
 	var textNewTweet = document.createTextNode(tweets);
@@ -44,13 +40,48 @@ var buttonTweet = document.getElementById('btn');
 		newTweet.appendChild(contenedorElemento);
 
 		container.appendChild(newTweet);	
+		document.getElementById("counter").innerHTML = 140 
 	
-	var textarea = document.getElementById('tweets');
-		textarea.onkeydown = function(){
+	var counter = initialCounter.innerHTML = 140;
 
-  	var initialLimit = document.getElementById("counter");
-  		initialLimit.innerHTML = 140 - this.value.length;
- 
-   };
-	
 })
+
+/*Botón en proceso
+var tweets = document.getElementById('tweets').value;
+
+if (tweets.length == 0 || tweets == null) {
+	document.getElementById("btn").disabled = true;
+    btn.classList.add("disableBtn");
+	} else {
+		document.getElementById("btn").disabled = false;
+		btn.classList.remove("disableBtn");
+	}
+*/
+
+//Ajuste de tamaño automático
+var textarea = document.getElementById('tweets');
+var heightLimit = 200; /* Maximum height: 200px */
+
+textarea.oninput = function() {
+  textarea.style.height = ""; 
+  textarea.style.height = Math.min(textarea.scrollHeight, heightLimit) + "px";
+};
+
+//Contador
+textarea.onkeydown = function(){
+var initialCounter = document.getElementById("counter");
+var counter = initialCounter.innerHTML = 140 - this.value.length;
+	
+	if (counter <= 20 && counter >= 11) {
+   		initialCounter.classList.remove('basecolor');
+   		initialCounter.classList.add('prewarning');
+   	} else if (counter <= 10 && counter > 0) {
+   		initialCounter.classList.remove('prewarning');
+   		initialCounter.classList.add('warning');
+   	} else if(counter > 20) {
+   		initialCounter.classList.remove('prewarning');
+   		initialCounter.classList.remove('warning');
+   		initialCounter.classList.add('basecolor');
+   	} 
+};
+
