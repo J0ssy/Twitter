@@ -75,7 +75,6 @@ li:hover {
 }
 
 div {
-	background-color: #fff;
 	border-radius: 2px;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 }
@@ -99,6 +98,7 @@ div {
 }
 
 .fixedDiv {
+	background-color: #fff;
 	min-width: 45%;
     height: 200px;
 	margin-top: 100px;
@@ -129,6 +129,7 @@ div {
 }
 
 .inputDiv {
+	background-color: #fff;
 	min-width: 45%;
     min-height: 200px;
 	margin-top: 100px;
@@ -158,8 +159,14 @@ textarea {
 	margin-top: 25px;
 }
 
-.commentDiv {
-	margin-top: 3em;
+.commentDivTweet {
+	background-color: #fff;
+	margin-top: 1em;
+    width: 92%;
+    min-height: 20px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -168,7 +175,13 @@ p {
 
 }
 
-.textTweet {
+.addTweet {
 	background-color: #4BB4F4;
 	color: #fff;
+}
+
+.tweetText {
+	font-size: 15px;
+	color: #7E8E9A;
+
 }
