@@ -144,6 +144,7 @@ li:hover {
 	display: inline-block;
 }
 
+/*Div para ingresar tweet*/
 textarea {
 	width: 100%;
 	min-height: 30%;
@@ -153,6 +154,12 @@ textarea {
 	border-bottom: solid 2px #4BB4F4;
 	color: #7E8E9A;
 	padding-bottom: 40px;
+	transition: border-color .3s ease-out;
+	overflow: hidden;
+}
+
+textarea.disabled {
+	border-bottom-color: rgba(75, 180, 244, .3);
 }
 
 /*Botón*/
@@ -169,6 +176,7 @@ textarea {
 /*Botón desactivado*/
 .disableBtn {
 	opacity: 0.5;
+	pointer-events: none;
 }
 
 
@@ -187,17 +195,13 @@ textarea {
 
 }
 
+/*Cortar la oración si sobrepasa tamaño del div*/
 p {
-	display: inline-block;
+	word-break: break-word;
 
 }
 
-.addTweet {
-	background-color: #4BB4F4;
-	color: #fff;
-}
-
-
+/*Tweet creado*/
 .tweetText {
 	font-size: 15px;
 	color: #7E8E9A;
@@ -225,4 +229,3 @@ p {
 .warning {
 	color: crimson;
 }
-
